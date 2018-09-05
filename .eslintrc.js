@@ -1,5 +1,11 @@
 module.exports = {
   parser: "babel-eslint",
+  plugins: [
+    "cypress"
+  ],
+  env: {
+    "cypress/globals": true
+  },
   extends: [
     "cypress"
   ],
