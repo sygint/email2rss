@@ -3,15 +3,21 @@
   "version": "0.0.0",
   "description": "Turn emails into RSS feeds",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "commitizen": "^2.10.1",
-    "emoji-cz": "^0.3.0"
+    "cz-emoji": "^1.1.2"
   },
-  "devDependencies": {},
   "scripts": {
+    "commit": "npx git-cz",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-emoji"
+    }
+  }
 }
