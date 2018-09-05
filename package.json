@@ -1,0 +1,17 @@
+{
+  "name": "email2rss",
+  "version": "0.0.0",
+  "description": "Turn emails into RSS feeds",
+  "main": "index.js",
+  "dependencies": {
+    "commitizen": "^2.10.1",
+    "emoji-cz": "^0.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
