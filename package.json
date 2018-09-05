@@ -7,6 +7,7 @@
   "devDependencies": {
     "babel-eslint": "^9.0.0",
     "commitizen": "^2.10.1",
+    "cypress": "^3.1.0",
     "cz-emoji": "^1.1.2",
     "eslint": "^5.5.0",
     "eslint-config-airbnb": "^17.1.0",
@@ -23,7 +24,8 @@
     "dev": "nodemon -- --experimental-modules src/server/index.mjs",
     "pre-commit": "lint-staged",
     "commit": "npx git-cz",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open"
   },
   "lint-staged": {
     "*.js": [
