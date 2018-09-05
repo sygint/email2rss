@@ -13,6 +13,12 @@ module.exports = {
     "cypress/globals": true
   },
   extends: [
+    "cypress"
+  ],
+  env: {
+    "cypress/globals": true
+  },
+  extends: [
     "airbnb",
     "prettier",
     "jsdoc-strict",
