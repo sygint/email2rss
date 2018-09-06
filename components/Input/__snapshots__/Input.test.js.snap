@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input should render the A component 1`] = `
+<div
+  className="field"
+>
+  <div
+    className="control"
+  >
+    <input
+      className="input is-large"
+      placeholder={null}
+      type="text"
+      value="some text"
+    />
+  </div>
+</div>
+`;

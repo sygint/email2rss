@@ -25,6 +25,7 @@ exports[`index should render the index page 1`] = `
             class="avatar"
           >
             <img
+              alt="placholder"
               src="https://placehold.it/128x128"
             />
           </figure>
@@ -78,6 +79,7 @@ exports[`index should render the index page 1`] = `
             </div>
             <button
               class="button is-block is-info is-large is-fullwidth"
+              type="button"
             >
               Sign Up
             </button>

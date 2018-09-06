@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render the Button component 1`] = `
+<button
+  className="button is-block is-info is-large is-fullwidth"
+  type="button"
+>
+  click me
+</button>
+`;
