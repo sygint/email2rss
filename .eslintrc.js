@@ -15,7 +15,8 @@ module.exports = {
   extends: [
     "airbnb",
     "prettier",
-    "jsdoc-strict"
+    "jsdoc-strict",
+    "jest-enzyme"
   ],
   rules: {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
