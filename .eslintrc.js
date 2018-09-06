@@ -8,7 +8,8 @@ module.exports = {
   },
   "extends": [
     "airbnb",
-    "prettier"
+    "prettier",
+    "jest-enzyme"
   ],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
