@@ -1,7 +1,8 @@
 module.exports = {
   // support properties on classes
   "plugins": [
-    "transform-class-properties"
+    "transform-class-properties",
+    "@babel/plugin-transform-runtime"
   ],
 
   "presets": [

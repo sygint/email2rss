@@ -4,6 +4,7 @@
   "description": "Turn emails into RSS feeds",
   "main": "index.js",
   "dependencies": {
+    "@babel/runtime": "^7.0.0",
     "next": "^6.1.1",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
