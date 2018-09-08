@@ -16,7 +16,7 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
-          <link rel="stylesheet" href="/static/bulma.min.css" />
+          <link rel="stylesheet" href="../../static/bulma.min.css" />
         </Head>
         <body className="custom_class">
           <Main />

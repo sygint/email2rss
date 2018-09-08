@@ -6,7 +6,7 @@ import express from 'express'
 import next from 'next'
 
 /* Next process */
-const app = next({ dev: true })
+const app = next({ dir: './src', dev: true })
 
 const handle = app.getRequestHandler()
 
