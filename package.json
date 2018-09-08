@@ -35,11 +35,10 @@
     "webpack": "^2.5.1"
   },
   "scripts": {
-    "dev": "nodemon --experimental-modules server/index.mjs",
+    "dev": "nodemon --experimental-modules src/server/index.mjs",
     "pre-commit": "lint-staged",
     "commit": "npx git-cz",
     "test": "jest --coverage --watch",
-    "pree2e": "node --experimental-modules server/index.mjs",
     "e2e": "cypress open"
   },
   "lint-staged": {
