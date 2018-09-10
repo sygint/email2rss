@@ -1,6 +1,7 @@
 {
   "watch": [
-    "server/**/*.js"
+    "src/",
+    "cypress/",
   ],
   "ignore": [
     "build/*"
