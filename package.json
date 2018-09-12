@@ -1,57 +1,27 @@
 {
-  "name": "email2rss",
-  "version": "0.0.0",
-  "description": "Turn emails into RSS feeds",
-  "main": "index.js",
+  "name": "email2rss-cra",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "express": "^4.16.3",
-    "next": "^6.1.1",
-    "prop-types": "^15.6.2",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "express-async-handler": "^1.1.4",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-scripts": "1.1.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "babel-eslint": "^9.0.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "commitizen": "^2.10.1",
-    "cypress": "^3.1.0",
-    "cz-emoji": "^1.1.2",
-    "enzyme": "^3.6.0",
-    "enzyme-adapter-react-16": "^1.5.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "23.4.2",
+    "enzyme": "3.4.3",
+    "enzyme-adapter-react-16": "1.2.0",
     "enzyme-to-json": "^3.3.4",
-    "eslint": "^5.5.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-jest-enzyme": "^6.0.4",
-    "eslint-config-prettier": "^3.0.1",
-    "eslint-plugin-cypress": "^2.0.1",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "^7.11.1",
-    "husky": "^0.14.3",
-    "jest": "^23.5.0",
-    "lint-staged": "^7.2.2",
-    "nodemon": "^1.18.4",
-    "webpack": "^2.5.1"
+    "jest": "23.5.0",
+    "react-addons-test-utils": "15.6.2",
+    "react-test-renderer": "16.4.2"
   },
   "scripts": {
-    "dev": "nodemon --experimental-modules src/server/index.mjs",
-    "pre-commit": "lint-staged",
-    "commit": "npx git-cz",
-    "test": "jest --coverage --watch",
-    "e2e": "cypress open"
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint"
-    ]
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-emoji"
-    }
+    "test": "NODE_ENV=test jest",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   }
 }

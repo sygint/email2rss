@@ -1,10 +1,5 @@
 module.exports = {
-  "snapshotSerializers": [
-    "enzyme-to-json/serializer"
-  ],
-  "coverageDirectory": "__coverage__",
-  "collectCoverageFrom": ["<rootDir>pages", "<rootDir>components"],
-
-  // identify test setup file for Enzyme adapter and other needs
-  "setupTestFrameworkScriptFile": "<rootDir>setupTests.js"
-};
+  setupFiles: ['<rootDir>/jest.setup.js'],
+  snapshotSerializers: ["enzyme-to-json/serializer"],
+  testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/']
+}
