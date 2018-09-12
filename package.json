@@ -3,14 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "express": "^4.16.3",
     "express-async-handler": "^1.1.4",
+    "next": "^6.1.2",
+    "prop-types": "^15.6.2",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "react-scripts": "1.1.5"
   },
   "devDependencies": {
-    "babel-core": "7.0.0-bridge.0",
+    "@babel/core": "^7.0.1",
     "babel-jest": "23.4.2",
+    "cypress": "^3.1.0",
     "enzyme": "3.4.3",
     "enzyme-adapter-react-16": "1.2.0",
     "enzyme-to-json": "^3.3.4",
@@ -19,9 +23,10 @@
     "react-test-renderer": "16.4.2"
   },
   "scripts": {
-    "test": "NODE_ENV=test jest",
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "dev": "NODE_ENV=development nodemon --experimental-modules src/server/index.mjs",
+    "pre-commit": "lint-staged",
+    "commit": "npx git-cz",
+    "test": "jest --coverage --watch",
+    "e2e": "cypress open"
   }
 }
